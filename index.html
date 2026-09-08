@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TwistFrame Publisher</title>
+<meta name="description" content="Internal automation tool that publishes TwistFrame's own original short-form videos to TwistFrame's own YouTube, Instagram and TikTok accounts using each platform's official API.">
+<!-- TIKTOK-VERIFICATION-META: if TikTok asks for a meta tag instead of a signature
+     file, paste it on the next line and redeploy. -->
+<style>
+  :root{--bg:#fbfbfd;--fg:#1a1a1f;--muted:#5b5b66;--card:#fff;--line:#e6e6ec;--accent:#4f46e5}
+  @media (prefers-color-scheme:dark){
+    :root{--bg:#0f0f13;--fg:#ececf1;--muted:#a2a2ad;--card:#17171d;--line:#2a2a33;--accent:#8b83ff}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:760px;margin:0 auto;padding:48px 22px 80px}
+  header{display:flex;align-items:center;gap:14px;margin-bottom:8px}
+  .logo{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#22d3ee);
+    display:grid;place-items:center;color:#fff;font-weight:800;font-size:19px}
+  h1{font-size:1.7rem;margin:.2em 0}
+  h2{font-size:1.15rem;margin:2.2em 0 .5em}
+  p,li{color:var(--fg)}
+  .lede{color:var(--muted);font-size:1.05rem}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:18px 0}
+  a{color:var(--accent)}
+  footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+  code{background:var(--line);padding:1px 6px;border-radius:5px;font-size:.9em}
+  ul{padding-left:1.2em}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">TF</div>
+    <h1>TwistFrame&nbsp;Publisher</h1>
+  </header>
+
+  <p class="lede">A private, internal automation tool used by the operator of the
+  <strong>TwistFrame</strong> media brand to publish TwistFrame's own original
+  short-form videos to TwistFrame's own social accounts.</p>
+
+  <div class="card">
+    <strong>Operated by:</strong> TwistFrame
+    (YouTube <a href="https://www.youtube.com/@TwistFrameMedia">@TwistFrameMedia</a>,
+    Instagram <a href="https://www.instagram.com/twistframemedia/">@twistframemedia</a>,
+    TikTok <a href="https://www.tiktok.com/@twistframemedia">@twistframemedia</a>)<br>
+    <strong>Contact:</strong> <a href="mailto:safonov.creator@gmail.com">safonov.creator@gmail.com</a>
+  </div>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Takes a finished video file produced by TwistFrame.</li>
+    <li>Runs technical and content-quality checks.</li>
+    <li>Generates a title, description and hashtags tailored to each platform.</li>
+    <li>Uploads the video to <strong>TwistFrame's own</strong> YouTube channel,
+        Instagram professional account and TikTok account through the official
+        <strong>YouTube Data API v3</strong>, <strong>Instagram Content Publishing API</strong>
+        and <strong>TikTok Content Posting API</strong>.</li>
+    <li>Confirms each upload and records the result.</li>
+  </ul>
+
+  <h2>Who can use it</h2>
+  <p>Only the TwistFrame account owner, on their own machine, for their own
+  accounts. It is not distributed, has no sign-up, no other users, and does not
+  act on behalf of anyone else.</p>
+
+  <h2>Data</h2>
+  <p>The tool stores OAuth access tokens for TwistFrame's own accounts locally on
+  the operator's computer, encrypted with the operating system's credential
+  store. It does not collect data from any other person, shows no ads, and runs
+  no analytics. See the <a href="privacy.html">Privacy Policy</a> and
+  <a href="terms.html">Terms of Service</a>.</p>
+
+  <footer>
+    TwistFrame Publisher &middot; <a href="terms.html">Terms of Service</a> &middot;
+    <a href="privacy.html">Privacy Policy</a><br>
+    &copy; <span id="y"></span> TwistFrame. This site exists to document the tool
+    for the platform API providers.
+  </footer>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
