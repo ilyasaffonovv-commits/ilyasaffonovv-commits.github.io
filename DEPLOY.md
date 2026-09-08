@@ -5,7 +5,7 @@ Live on GitHub Pages (free). Two copies so any TikTok verification method works:
 | URL | repo |
 |---|---|
 | **https://ilyasaffonovv-commits.github.io/** | `ilyasaffonovv-commits/ilyasaffonovv-commits.github.io` |
-| https://ilyasaffonovv-commits.github.io/twistframe-publisher/ | `ilyasaffonovv-commits/twistframe-publisher` |
+| https://ilyasaffonovv-commits.github.io/ | `ilyasaffonovv-commits/twistframe-publisher` |
 
 ### The three URLs for TikTok (use the apex ones)
 
@@ -21,7 +21,6 @@ Edit `index.html` / `privacy.html` / `terms.html` here, then:
 
 ```bash
 cd publisher/site
-git add -A && git commit -m "edit" && git push origin main && git push apex main --force
 ```
 
 Both sites rebuild in ~1-2 min.
